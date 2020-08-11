@@ -21,6 +21,11 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         redBar.setOnSeekBarChangeListener(this)
         greenBar.setOnSeekBarChangeListener(this)
         blueBar.setOnSeekBarChangeListener(this)
+
+        //initializing color values
+        onProgressChanged(redBar, redBar.progress, true)
+        onProgressChanged(greenBar, greenBar.progress, true)
+        onProgressChanged(blueBar, blueBar.progress, true)
     }
 
     //method called when any seek bar changes
